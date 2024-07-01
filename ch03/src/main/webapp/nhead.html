@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* { margin: 0; padding: 0
+}
+body { font-family: "돋움", "맑은 고딕"; font-size: 12px; color: #333; margin: 0;padding: 0;}
+
+.header { 
+	width: 650px; 
+	height: 100px; 
+	margin: 50px auto; 
+	background-color: #ddd 
+}
+
+.header .logo, .header .search-box {
+	float: left;
+}
+
+.header .logo {
+	font-size:0px;
+	width: 222px;
+	height: 52px;
+	
+	background: url('/ch03/images/n-splite.png') no-repeat 0 -158px /442px 428px;
+}
+
+.header .search-box {
+	width: 400px;
+	height: 50px;
+	border: 3px solid #03C75A;
+	margin-left: 20px;
+	background-color: #fff;	
+}
+
+.search-box a, .search-box input, .search-box button {
+	display: block;		/*나중에 background-img 줘야하니까 block으로 바꿈. inline으론 안된다.*/
+	float: right;
+}
+
+.search-box input {
+	outline: none;
+	border: none;
+	width: 260px;
+	padding: 13px 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+ 
+</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1 class="logo">네이버</h1>
+		<div class="search-box">
+			<button>검색</button>
+			<a href="">드롭다운</a> <a href="">키보드</a>
+			<input type="text">			
+		</div>
+	</div>
+</body>
+
+</html>
